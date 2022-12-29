@@ -1,0 +1,321 @@
+<html>
+
+  <head>
+    <title>明新科技大學資訊管理系</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script>
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          rtl: true
+        });
+      });
+
+    </script>
+    <style>
+      * {
+        margin: 0;
+        color: gray;
+        /*font-size: 50px;*/
+        text-align: center;
+      }
+
+      /* top */
+      .top {
+        background-color: RGB(108, 88, 76);
+      }
+
+      .top .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      .top .logo {
+        /*border:1px solid red;*/
+        font-size: 35px;
+        font-weight: bold;
+        color: RGB(169, 132, 103)
+      }
+
+      .top .logo img {
+        width: 100px;
+        vertical-align: middle;
+      }
+
+      .top .top-nav {
+        /*border:1px solid red;*/
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .top .top-nav a {
+        text-decoration: none;
+      }
+
+      /* nav */
+      .nav {
+        background-color: #adc178;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #adc178;
+      }
+
+      .nav li {
+        float: left;
+      }
+
+      .nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .nav li a:hover {
+        background-color: #111;
+      }
+
+      /*下拉式選單*/
+      .dropdown:hover .dropdown-content {
+        display: block;
+        /*使用block呈現上下排列*/
+      }
+
+      li.dropdown:hover {
+        background-color: #f0ead2;
+        /*設定背景顏色*/
+      }
+
+      .dropdown-content {
+        /*設定下拉選單內容格式*/
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        /*設定下拉選單連結內容格式*/
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      /* slider */
+      .slider {
+        background-color: #f5ebe0;
+        padding: 20px;
+      }
+
+      /* banner*/
+      .banner {
+        background-image: linear-gradient(#d5bdaf, #e3d5ca);
+        padding: 30px;
+      }
+
+      .banner h1 {
+        padding: 20px;
+      }
+
+      /*faculty*/
+     
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+
+      .contact {
+        display: block;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .contact h2 {
+        color: rgb(54, 82, 110);
+        font-size: 25px;
+      }
+
+      .contact .infos {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+      }
+
+      .contact .infos .left {
+        display: block;
+        text-align: left;
+        margin-right: 30px;
+      }
+
+      .contact .infos .left b {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        text-decoration: bold;
+        color: Gray;
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      .contact .infos .left span {
+        display: block;
+        text-align: left;
+        margin-top: 10px;
+        color: rgba(39, 40, 34, 0.5);
+        font-size: 16px;
+        padding-left: 27px;
+      }
+
+      .contact .infos .right {
+        height: 200px;
+      }
+
+      .contact .infos .right iframe {
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(39, 40, 34, 0.50);
+      }
+
+      /*footer*/
+         .footer {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(25, 26, 30);
+        padding: 30px 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <div class="container">
+        <div class="logo">
+          <img src="https://ninjalathegame.com/_materials/img/news/info/collab-kimetsu/sticker-img01.png">
+          鬼滅之刃
+        </div>
+        <div class="top-nav">
+          <a href=>GOODS</a>
+          <a href=>MOVIE</a>
+          <a href=>TWITTER</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#introduction">故事介紹</a></li>
+        <li class="dropdown"><a href="#faculty">出場人物</a>
+          <div class="dropdown-content">
+            <a href="#">黃老師</a>
+            <a href="#">李老師</a>
+            <a href="#">應老師</a>
+          </div>
+        </li>
+        <li><a href="#about">製作廠商</a></li>
+      </ul>
+    </div>
+    <div class="slider">
+      <div class="flexslider" style="">
+        <ul class="slides">
+          <li><img src="https://i.ibb.co/jJyMF0P/3.jpg" /></li>
+          <li><img src="https://i.ibb.co/09p9Xc8/2.jpg" /></li>
+          <li><img src="https://i.ibb.co/Qc1dQq2/1.jpg" /></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner" id="introduction">
+      <h1>故事介紹</h1>
+      <h2>是 日 本 漫 畫 家 吾 峠 呼 世 晴 所 創</h2>
+      <h2>作 的 奇 幻 漫 畫 作 品 ， 描 述 主 角</h2>
+      <h2>炭 治 郎 為 了 尋 求 被 變 成 鬼 的 妹</h2>
+      <h2>妹 變 回 人 類 的 方 法 ， 並 踏 上 斬</h2>
+      <h2>鬼 之 旅 的 和 風 刀 劍的 奇 譚 。</h2>
+    </div>
+    <div class="faculty" id="faculty">
+      <h2>角色介紹</h2>
+      <div class="container">
+        <a class="teacher" href="">
+          <img src="https://i.ibb.co/TgQ8Yqv/1.jpg" />
+          <h3>灶門炭治郎</h3>
+        </a>
+        <a class="teacher" href="">
+          <img src="https://i.ibb.co/zhSbRBk/2.jpg" />
+          <h3>煉獄杏寿郎</h3>
+        </a>
+        <a class="teacher" href="">
+          <img src="https://i.ibb.co/m69kzmW/3.jpg" />
+          <h3>宇髓天元</h3>
+        </a>
+        <a class="teacher" href="">
+          <img src="https://i.ibb.co/JQGgcjJ/4.jpg" />
+          <h3>時透無一郎</h3>
+        </a>
+      </div>
+    </div>
+    <div class="contact" id="about">
+      <h2>相關資訊</h2>
+      <div class="infos">
+        <div class="left">
+          <b>新竹巨城威秀影城</b>
+          <span>300新竹市東區民權路176號樓之3</span>
+          <b> 電話:035346999</b>
+          <span>分機:3431、3432、3433</span>
+          <b> 傳真:03-5593142</b>
+          <span>分機:3440</span>
+        </div>
+        <div class="right">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7243.418866872433!2d120.96618694925746!3d24.805401297992802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346835eacf47b397%3A0x277a29b8c8c83e43!2z5paw56u55beo5Z-O5aiB56eA5b2x5Z-O!5e0!3m2!1szh-TW!2stw!4v1672279494770!5m2!1szh-TW!2stw"frameborder="0" style="border:0" allowfullscreen> </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      &copy;Copyright 2022 Department of Information Management, BigCity  . All rights reserved. 維護者  劉祖豪
+    </div>
+  </body>
+
+</html>
